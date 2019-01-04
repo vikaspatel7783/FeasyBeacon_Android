@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_number">
+        <item>20</item>        <!--BT909-->
+        <item>21</item>        <!--BP102-->
+        <item>25</item>        <!--BP109-->
+        <item>26</item>        <!--BP103-->
+        <item>27</item>        <!--BP104-->
+        <item>28</item>        <!--BP201-->
+        <item>29</item>        <!--BP106-->
+    </string-array>
+</resources>
+

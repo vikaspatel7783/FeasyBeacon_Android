@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bird" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/about_title"
+            android:textColor="@color/about_title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/about_text"
+            android:text="@string/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/aboutUsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textColor="@color/about_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/About_LL">
+
+            <TextView
+                style="@style/module_TV"
+                android:text="@string/company" />
+
+            <TextView
+                style="@style/About_Right_TV"
+                android:text="@string/company_name" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/About_LL">
+
+            <TextView
+                style="@style/module_TV"
+                android:text="@string/tel"
+                android:textColor="@color/about_text" />
+
+            <TextView
+                style="@style/About_Right_TV"
+                android:autoLink="phone"
+                android:text="@string/tel_number" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/About_LL">
+
+            <TextView
+                style="@style/module_TV"
+                android:text="@string/web"
+                android:textColor="@color/about_text" />
+
+            <TextView
+                style="@style/About_Right_TV"
+                android:autoLink="web"
+                android:text="@string/web_url" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/About_LL">
+
+            <TextView
+                style="@style/module_TV"
+                android:text="@string/mail"
+                android:textColor="@color/about_text" />
+
+            <TextView
+                style="@style/About_Right_TV"
+                android:autoLink="email"
+                android:text="@string/mail_addr" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/About_LL">
+
+            <TextView
+                style="@style/module_TV"
+                android:text="User Guide"
+                android:textColor="@color/about_text" />
+
+            <TextView
+                style="@style/About_Right_TV"
+                android:autoLink="web"
+                android:text="http://www.feasycom.cn/pdf/1.pdf" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/About_LL"
+            android:id="@+id/qr"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/module_TV"
+                android:text="@string/Facebook"
+                android:textColor="@color/about_text" />
+
+            <TextView
+                style="@style/About_Right_TV"
+                android:text="@string/FaceBook_addr" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qrcode" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/About_LL">
+
+            <TextView
+                style="@style/module_TV"
+                android:text="@string/appVersion"
+                android:textColor="@color/about_text" />
+
+            <TextView
+                style="@style/About_Right_TV"
+                android:text="@string/version_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/footer" />
+</LinearLayout>
+

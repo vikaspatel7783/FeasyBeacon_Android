@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.feasycom.fsybecon">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 蓝牙SPP权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- for 三星 -->
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+    <!-- 蓝牙BLE权限 -->
+    <uses-feature android:name="android.hardware.bluetooth_le" />
+
+    <!-- 安卓6蓝牙权限，必须打开定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <!-- 系统对话框权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 文件数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/favicon_96"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/favicon_96"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name=".Activity.AdvertisingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.notAnimation">
+        </activity>
+        <activity
+            android:name=".Activity.ParameterSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.notAnimation"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name="com.feasycom.service.AtCommandService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.feasycom.service.OTASPPService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activity.SetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.notAnimation"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.notAnimation" />
+        <activity
+            android:name=".Activity.AddBeaconActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.notAnimation" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.notAnimation" />
+        <activity
+            android:name=".Activity.UpgradeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.notAnimation" />
+        <activity android:name=".Activity.GuideActivity" />
+        <activity
+            android:name=".Activity.FilterDeviceActivity"
+            android:label="@string/title_activity_filter_device"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- WalkinRadius -->
+        <activity android:name=".walkinradius.activity.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".walkinradius.activity.AccountBeaconActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".walkinradius.activity.AddBeaconActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

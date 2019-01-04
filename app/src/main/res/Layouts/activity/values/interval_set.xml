@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="interval_table">
+    <item></item>
+    <item>100ms</item>  <!--0-->
+    <item>150ms</item>
+    <item>200ms</item>
+    <item>300ms</item>
+    <item>400ms</item>
+    <item>550ms</item>
+    <item>750ms</item>
+    <item>850ms</item>
+    <item>1000ms</item>       <!--8-->
+    <item>1300ms</item>       <!--9-->
+    <item>2000ms</item>       <!--a-->
+</string-array>
+</resources>

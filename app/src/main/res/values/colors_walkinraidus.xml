@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Walkin radius -->
+    <color name="button_color">#F52003</color>
+    <color name="button_pressed">#A93226</color>
+    <color name="color_light_blue">#84effd</color>
+
+</resources>

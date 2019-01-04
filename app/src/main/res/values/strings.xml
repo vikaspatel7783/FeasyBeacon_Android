@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">WalkinRadius</string>
+
+    <string name="version">Version</string>
+    //默认值
+    <string name="default_device_name">Feasycom</string>
+    <string name="default_advin_time">150</string>
+    <string name="default_txpower">7</string>    <!-- 默认 0db-->
+    <string name="default_pin">0000</string>
+
+    //关于
+    <string name="more">more ></string>
+    <string name="about_title">About Feasycom</string>
+    <string name="company">Company</string>
+    <string name="company_name">Shenzhen Feasycom Technology Co.,Ltd</string>
+    <string name="tel_number">+86-0755-23062695</string>
+    <string name="tel">Tel</string>
+    <string name="web">Web</string>
+    <string name="web_url">www.feasycom.com</string>
+    <string name="mail">E-mail</string>
+    <string name="mail_addr">support@feasycom.com</string>
+    <string name="user_guide">http://www.feasycom.cn/pdf/1.pdf</string>
+    <string name="Facebook">Facebook</string>
+    <string name="FaceBook_addr">Feasycom</string>
+    <string name="appVersion">Version</string>
+
+
+    // header
+    <string name="back">BACK</string>
+    <string name="save">SAVE</string>
+    <string name="title_advertisement_activity" tools:ignore="ExtraTranslation">Walkin-Radius Advertisements</string>
+    <string name="title_settings_activity" tools:ignore="ExtraTranslation">Walkin-Radius beacons</string>
+    <string name="parameter_setting_title">Parameter Setting</string>
+    <string name="update">Update </string>
+    <string name="add_beacon_title">Add Beacon</string>
+    <string name="function_title">Function</string>
+    <string name="modify_key_title">Modify PIN</string>
+    <string name="add_beacon_right">DONE</string>
+
+    // Function
+    <string name="modify_pin">Modify PIN</string>
+    <string name="hint_creat_pin">Creat a new Pin</string>Password
+    <string name="hint_confirm_pin">Confirm your Pin</string>
+    <string name="creat_pin_failed">Creat Pin Failed</string>
+    <string name="hint_input_PIN"></string>
+    //下拉刷新
+    <string name="pull_to_refresh">Pull to refresh</string>
+    <string name="release_to_refresh">Release to refresh</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="not_updated_yet">Do not updated yet</string>
+    <string name="updated_at">Updated at %1$s</string>
+    <string name="updated_just_now">Updated just now</string>
+    <string name="time_error">Time error</string>
+
+
+
+
+    // 参数修改
+    <string name="switch_on">on</string>
+    <string name="switch_off">off</string>
+    <string name="list_title_index">    Broadcast</string>
+    <string name="list_title_info">Broadcast</string>
+    //版本消息
+    <string name="version_name">3.1.0</string>
+    <string name="version_update">Get the newest version</string>
+    //设备过滤
+    <string name="filter">Filter</string>
+    <string name="service_uuid">Service UUID</string>
+    <string name="notice_uuid">Notice UUID</string>
+    <string name="write_uuid">Write UUID</string>
+
+    //OTA
+    <string name="otaFile">File: </string>
+    <string name="module">Module</string>
+    <string name="appVwesion">AppVersion</string>
+    <string name="blVwesion">BLVersion</string>
+    <string name="current">Current</string>
+    <string name="except">New</string>
+    <string name="rest">Rest</string>
+    <string name="start">Start</string>
+    <string name="selectFile">SelectFile</string>
+
+</resources>

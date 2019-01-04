@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/footer"
+        style="@style/Beacon_Setting_About_LL"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/Search_Button"
+            style="@style/Beacon_Setting_About_IV"
+            android:src="@drawable/search_on"
+            />
+        <ImageView
+            android:id="@+id/Set_Button"
+            style="@style/Beacon_Setting_About_IV"
+            android:src="@drawable/setting_off"
+            />
+        <ImageView
+            android:id="@+id/About_Button"
+            style="@style/Beacon_Setting_About_IV"
+            android:src="@drawable/about_off"
+            />
+    </LinearLayout>
+</merge>

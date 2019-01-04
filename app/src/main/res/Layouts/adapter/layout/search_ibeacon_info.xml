@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BeaconInfo_TV"
+        android:text="iBeacon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BeaconInfo_TV"
+            android:text="RSSI at 1m: " />
+
+        <TextView
+            android:id="@+id/tv_ibeacon_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BeaconInfo_TV"
+            android:text="unknow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BeaconInfo_TV"
+            android:text="UUID: " />
+
+        <TextView
+            android:id="@+id/tv_ibeacon_uuid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BeaconInfo_TV"
+            android:text="unknow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BeaconInfo_TV"
+            android:text="Major: " />
+
+        <TextView
+            android:id="@+id/tv_ibeacon_major"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            style="@style/BeaconInfo_TV"
+            android:text="unknow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BeaconInfo_TV"
+            android:text="Minor: " />
+
+        <TextView
+            android:id="@+id/tv_ibeacon_minor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            style="@style/BeaconInfo_TV"
+            android:text="unknow" />
+    </LinearLayout>
+</LinearLayout>

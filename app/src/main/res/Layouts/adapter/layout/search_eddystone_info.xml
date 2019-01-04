@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/BeaconInfo_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eddystone " />
+
+        <TextView
+            android:id="@+id/tv_frame_type"
+            style="@style/BeaconInfo_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unknow unknow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BeaconInfo_TV"
+            android:text="RSSI at 0m: " />
+
+        <TextView
+            android:id="@+id/tv_eddystone_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BeaconInfo_TV"
+            android:text="unknow" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_eddystone_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/BeaconInfo_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL " />
+
+        <TextView
+            android:id="@+id/tv_eddystone_url"
+            style="@style/BeaconInfo_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unknow" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_eddystone_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Namespace: " />
+
+            <TextView
+                android:id="@+id/tv_eddystone_namespace"
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unknow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instance: " />
+
+            <TextView
+                android:id="@+id/tv_eddystone_intance"
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unknow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reserved: " />
+
+            <TextView
+                android:id="@+id/tv_eddystone_reserved"
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unknow" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

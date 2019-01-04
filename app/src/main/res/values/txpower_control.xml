@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="txpower_table">
+        <item></item>
+        <item>-21db</item>      <!--0-->
+        <item>-18db</item>      <!--1-->
+        <item>-15db</item>
+        <item>-12db</item>
+        <item>-9db</item>
+        <item>-6db</item>
+        <item>-3db</item>
+        <item>0db</item>
+        <item>1db</item>
+        <item>2db</item>
+        <item>3db</item>       <!--a-->
+        <item>4db</item>       <!--b-->
+        <item>5db</item>       <!--c-->
+    </string-array>
+</resources>

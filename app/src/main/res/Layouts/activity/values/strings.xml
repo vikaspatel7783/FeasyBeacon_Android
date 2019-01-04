@@ -1,0 +1,7 @@
+<resources>
+    <string name="title_activity_filter_device">FilterDeviceActivity</string>
+    <string name="sort">Sort</string>
+    <string name="Filter">Filter</string>
+    <string name="filter_by_rssi">Filter Enable</string>
+    <string name="minimum_rssi">Minimum RSSI:</string>
+</resources>

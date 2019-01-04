@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="beacon_table">
+        <item></item>
+        <item>UID</item>
+        <item>URL</item>
+        <item>iBeacon</item>
+        <item>AltBeacon</item>
+    </string-array>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LableEditView">
+        <attr name="labelText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ToggleButton">
+        <attr name="tbBorderWidth" format="dimension" />
+        <attr name="tbOffBorderColor" format="reference|color" />
+        <attr name="tbOffColor" format="reference|color" />
+        <attr name="tbOnColor" format="reference|color" />
+        <attr name="tbSpotColor" format="reference|color" />
+        <attr name="tbAnimate" format="reference|boolean" />
+        <attr name="tbAsDefaultOn" format="reference|boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="IndexTitleImageView">
+        <attr name="index" format="string" />
+        <attr name="title" format="string" />
+        <attr name="imgSrc" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean" />
+        <attr name="primaryColor" format="color" />
+        <attr name="primaryColorDark" format="color" />
+        <attr name="offColor" format="color" />
+        <attr name="offColorDark" format="color" />
+        <attr name="shadowColor" format="color" />
+        <attr name="ratioAspect" format="float" />
+        <attr name="isOpened" format="boolean" />
+    </declare-styleable>
+</resources>

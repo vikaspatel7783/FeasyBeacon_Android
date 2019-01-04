@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="StyleButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_selector</item>
+    </style>
+
+    <style name="StyleHeaderButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_color</item>
+        <item name="android:background">@drawable/button_selector_header</item>
+    </style>
+
+    <style name="StyleTextLabel">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#F52003</item>
+    </style>
+
+</resources>

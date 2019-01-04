@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/account_beacon_count_container"
+        android:layout_width="match_parent"
+        android:background="@color/button_color"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/total_account_beacon"
+            style="@style/StyleTextLabel"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="TOTAL ACCOUNT BEACONS" />
+
+        <TextView
+            android:id="@+id/account_beacon_refersh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="6dp"
+            android:layout_marginRight="8dp"
+            style="@style/StyleHeaderButton"
+            android:text="REFRESH" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/account_beacon_count_container"
+        android:id="@+id/beacons_list"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@id/myfooter"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/pgBarLogin"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
+        android:visibility="gone" />
+
+    <include android:id="@+id/myfooter" layout="@layout/footer" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/beacon_pic"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ibeacon"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_rssi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/beacon_rssi"
+                    android:gravity="center_horizontal"
+                    android:text="unknow"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:gravity="left"
+                    style="@style/Beacon_Addr_Mac_TV"/>
+                <TextView
+                    android:id="@+id/tv_addr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="12:23:34:45:56"
+                    style="@style/Beacon_Addr_Mac_TV"/>
+            </LinearLayout>
+
+
+            <com.feasycom.fsybecon.BeaconView.IBeaconItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iBeacon_item_view"
+                android:visibility="gone"
+                />
+            <com.feasycom.fsybecon.BeaconView.EddystoneBeaconItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gBeacon_item_view"
+                android:visibility="gone"/>
+            <com.feasycom.fsybecon.BeaconView.AltBeaconItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altBeacon_item_view"
+                android:visibility="gone"></com.feasycom.fsybecon.BeaconView.AltBeaconItem>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_rssi"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/gBeacon_item_view"
+        android:progressDrawable="@drawable/progressbar"/>
+
+</LinearLayout>

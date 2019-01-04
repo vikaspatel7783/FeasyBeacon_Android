@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.feasycom.fsybecon.BeaconView.iBeaconView
+        android:id="@+id/setting_parameter_ibeacon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.feasycom.fsybecon.BeaconView.iBeaconView>
+
+
+    <com.feasycom.fsybecon.BeaconView.Eddystone_UIDView
+        android:id="@+id/setting_parameter_eddystone_uid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.feasycom.fsybecon.BeaconView.Eddystone_UIDView>
+
+    <com.feasycom.fsybecon.BeaconView.Eddystone_URLView
+        android:id="@+id/setting_parameter_eddystone_url"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.feasycom.fsybecon.BeaconView.Eddystone_URLView>
+
+    <com.feasycom.fsybecon.BeaconView.AltBeaconView
+        android:id="@+id/setting_parameter_altbeacon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.feasycom.fsybecon.BeaconView.AltBeaconView>
+</LinearLayout>

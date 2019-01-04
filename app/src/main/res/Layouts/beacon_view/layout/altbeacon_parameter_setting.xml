@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:widget="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/Index_Title_Image">
+
+            <TextView
+                android:id="@+id/beacon_index"
+                style="@style/setting_parameter_left_text" />
+
+            <TextView
+                android:id="@+id/beacon_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/about_title"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/altBeacon_uuid_label"
+                style="@style/setting_parameter_left_text"
+                android:text="ID1:" />
+
+            <EditText
+                android:id="@+id/altBeacon_id_1"
+                style="@style/iBeaconEdit"
+                android:digits="0123456789abcdefABCDEF" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/altBeacon_major_label"
+                style="@style/setting_parameter_left_text"
+                android:text="ID2: " />
+
+            <EditText
+                android:id="@+id/altBeacon_id_2"
+                style="@style/iBeaconEdit"
+                android:digits="0123456789abcdefABCDEF" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/altBeacon_minor_label"
+                style="@style/setting_parameter_left_text"
+                android:text="ID3: " />
+
+            <EditText
+                android:id="@+id/altBeacon_id_3"
+                style="@style/iBeaconEdit"
+                android:digits="0123456789abcdefABCDEF" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/altBeacon_power_label"
+                style="@style/setting_parameter_left_text"
+                android:text="RSSI at 1m: " />
+
+            <EditText
+                android:id="@+id/altBeacon_power"
+                style="@style/iBeaconEdit"
+                android:digits="0123456789-"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/altBeacon_manufacture_id_label"
+                style="@style/setting_parameter_left_text"
+                android:text="Manufacturer ID" />
+
+            <EditText
+                android:id="@+id/altBeacon_manufacture_id"
+                style="@style/iBeaconEdit"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/altBeacon_manufacture_reserved_label"
+                style="@style/setting_parameter_left_text"
+                android:text="Manufacturer Reserved" />
+
+            <EditText
+                android:id="@+id/altBeacon_manufacture_reserved"
+                style="@style/iBeaconEdit"
+                android:digits="0123456789abcdefABCDEF"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Enable:"
+                android:textColor="@color/about_title"
+                android:textSize="14sp" />
+
+            <com.feasycom.fsybecon.Widget.SwitchButton
+                android:id="@+id/beacon_enable"
+                android:layout_width="54dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</merge>

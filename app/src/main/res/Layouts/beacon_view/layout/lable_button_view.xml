@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/parameterLabel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="@color/about_title"/>
+
+        <com.feasycom.fsybecon.Widget.ToggleButton
+            android:id="@+id/button"
+            android:layout_width="54dp"
+            android:layout_height="30dp"
+            app:tbBorderWidth="1dp"
+            app:tbOffBorderColor="#ddd"
+            app:tbOffColor="#ddd"
+            app:tbOnColor="#3ec85c"
+            app:tbSpotColor="#fff"></com.feasycom.fsybecon.Widget.ToggleButton>
+
+    </LinearLayout>
+
+
+</merge>

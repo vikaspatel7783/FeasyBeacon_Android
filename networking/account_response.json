@@ -1,0 +1,48 @@
+{
+  "userIdAssociation": "User1234",
+  "beacons": [
+    {
+      "template": [
+        {
+          "templateLink": "http://www.google.com",
+          "templateStatus": "active",
+          "associationMAC" : "E2:R3:ED:56:32:E5"
+        },
+        {
+          "templateLink": "http://www.yahoo.com",
+          "templateStatus": "active",
+          "associationMAC" : "E2:R3:ED:56:32:E5"
+        }
+      ],
+      "beaconProperties": {
+        "beaconName": "Beacon1",
+        "beaconMAC": "E2:R3:ED:56:32:E5",
+        "beaconLocation": "1st floor"
+      }
+    },
+    {
+      "template": [
+        {
+          "templateLink": "http://www.google.com",
+          "templateStatus": "active",
+          "associationMAC" : "E2:R3:34:QW:X3:E5"
+        },
+        {
+          "templateLink": "http://www.yahoo.com",
+          "templateStatus": "active",
+          "associationMAC" : "E2:R3:34:QW:X3:E5"
+        },
+        {
+          "templateLink": "http://www.yahoo.com",
+          "templateStatus": "active",
+          "associationMAC" : "E2:R3:34:QW:X3:E5"
+        }
+      ],
+      "beaconProperties": {
+        "beaconName": "Beacon2",
+        "beaconMAC": "E2:R3:34:QW:X3:E5",
+        "beaconLocation": "2nd floor"
+      }
+    }
+  ]
+}

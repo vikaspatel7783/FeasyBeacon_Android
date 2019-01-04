@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round"
+    android:padding="10dp"
+    android:layout_margin="7dp">
+
+    <!-- UUID -->
+    <!--<RelativeLayout
+        android:id="@+id/root_list_item_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView_uuid_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/StyleTextLabel"
+            android:text="@string/label_uuid" />
+
+        <TextView
+            android:id="@+id/textView_uuid_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_uuid_label"
+            android:textStyle="bold"
+            android:text="UUID value" />
+    </RelativeLayout>-->
+
+
+
+    <!-- MODEL -->
+    <RelativeLayout
+        android:id="@+id/root_list_item_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView_model_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/StyleTextLabel"
+            android:text="@string/label_ibeacon_model" />
+
+        <TextView
+            android:id="@+id/textView_model_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView_model_label"
+            android:text="IBEACON MODEL VALUE" />
+    </RelativeLayout>
+
+
+
+    <!-- TEMP NAME -->
+    <RelativeLayout
+        android:id="@+id/root_list_item_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/root_list_item_2">
+
+        <TextView
+            android:id="@+id/textView_temp_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/StyleTextLabel"
+            android:text="@string/label_temp_name" />
+
+        <TextView
+            android:id="@+id/textView_temp_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_temp_name_label"
+            android:textStyle="bold"
+            android:text="TEMP NAME VALUE" />
+    </RelativeLayout>
+
+
+    <!-- TEMP NAME -->
+    <RelativeLayout
+        android:id="@+id/root_list_item_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/root_list_item_3">
+
+        <TextView
+            android:id="@+id/textView_temp_link_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/StyleTextLabel"
+            android:text="@string/label_temp_link" />
+
+        <TextView
+            android:id="@+id/textView_temp_link_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView_temp_link_label"
+            android:text="TEMP LINK VALUE" />
+    </RelativeLayout>
+
+
+    <!-- LOCATION -->
+    <RelativeLayout
+        android:id="@+id/root_list_item_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/root_list_item_4">
+
+        <TextView
+            android:id="@+id/textView_location_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/StyleTextLabel"
+            android:text="@string/label_location" />
+
+        <TextView
+            android:id="@+id/textView_location_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView_location_label"
+            android:text="LOCATION VALUE" />
+    </RelativeLayout>
+
+
+    <!-- STATUS -->
+    <RelativeLayout
+        android:id="@+id/root_list_item_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/root_list_item_5">
+
+        <TextView
+            android:id="@+id/textView_status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/StyleTextLabel"
+            android:text="@string/label_status" />
+
+        <TextView
+            android:id="@+id/textView_status_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView_status_label"
+            android:text="STATUS VALUE" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

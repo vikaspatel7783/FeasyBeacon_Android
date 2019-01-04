@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="label_user_name">USER NAME</string>
+    <string name="label_password">PASSWORD</string>
+
+    <!-- Login field validation -->
+    <string name="message_username_or_password_blank">User name or password can not be blank</string>
+
+    <!-- Dashboard Beacons list -->
+    <string name="label_uuid">UUID</string>
+    <string name="label_ibeacon_model">MODEL</string>
+    <string name="label_temp_name">TEMP NAME</string>
+    <string name="label_temp_link">TEMP LINK</string>
+    <string name="label_location">LOCATION</string>
+    <string name="label_status">STATUS</string>
+
+    <!-- Scanned beacons list -->
+    <string name="label_mac_address">MAC</string>
+    <string name="label_device_name">DEVICE NAME</string>
+    <string name="label_device_rssi">RSSI</string>
+    <string name="label_device_gbeacon_url">URL</string>
+
+    <!-- PIN input dialog -->
+    <string name="hint_pin_input">Input PIN</string>
+
+    <string name="no_internet_message">Seems not connected to Internet</string>
+    <string name="beacon_info_full">Adding new beacon capacity is full</string>
+
+    <!-- Beacon connect -->
+    <string name="label_beacon_connect_default">CONNECTING…</string>
+    <string name="label_beacon_connect_successful">CONNECTED</string>
+    <string name="label_beacon_connect_password_check">CHECKING PIN…</string>
+    <string name="label_beacon_connect_password_success">PIN VERIFICATION SUCCESSFUL</string>
+    <string name="label_beacon_connect_password_failed">Entered PIN is wrong.</string>
+    <string name="label_beacon_connect_time_out">TIMED OUT</string>
+    <string name="label_fetch_stored_beacon_info">FETCHING STORED BEACON INFO…</string>
+
+    <!-- Progress bar message -->
+    <string name="progress_msg_login">Validating user...</string>
+    <string name="progress_msg_fetch_account_beacon">Fetching account beacon details...</string>
+
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:id="@+id/selectFileLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/start_button_round"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/selectFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_round_left"
+            android:text="@string/selectFile"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            style="@style/otaText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/otaFile" />
+
+        <TextView
+            android:id="@+id/otaFileName"
+            style="@style/otaText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/OTAInfoLL"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/module" />
+
+            <TextView
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/appVwesion" />
+
+            <TextView
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/blVwesion" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/current" />
+
+            <TextView
+                android:id="@+id/currentModule"
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/currentVersion"
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <TextView
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/except" />
+
+            <TextView
+                android:id="@+id/exceptModule"
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/exceptVersion"
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <TextView
+                style="@style/otaText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="-" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resetLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/otaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/rest" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otaProgressLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone">
+        <com.feasycom.fsybecon.Widget.CircleNumberProgress
+            android:id="@+id/otaProgress"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:visibility="visible"></com.feasycom.fsybecon.Widget.CircleNumberProgress>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/start_button_round">
+
+        <Button
+            android:id="@+id/startOTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_round_left"
+            android:text="@string/start"
+            android:enabled="false"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/footer" />
+
+</LinearLayout>
+
+

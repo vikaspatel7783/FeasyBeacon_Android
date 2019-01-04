@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.feasycom.fsybecon.BeaconView.LableEditView
+        android:id="@+id/Module"
+        style="@style/Label_Edit"
+        app:labelText="Model : "></com.feasycom.fsybecon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+
+    <com.feasycom.fsybecon.BeaconView.LableEditView
+        android:id="@+id/Version"
+        style="@style/Label_Edit"
+        app:labelText="Version: "></com.feasycom.fsybecon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+    <com.feasycom.fsybecon.BeaconView.LableEditView
+        android:id="@+id/Name"
+        style="@style/Label_Edit"
+        app:labelText="Name: "></com.feasycom.fsybecon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+    <com.feasycom.fsybecon.BeaconView.LableEditView
+        android:id="@+id/PIN"
+        style="@style/Label_Edit"
+        android:visibility="gone"
+        app:labelText="Pin: "></com.feasycom.fsybecon.BeaconView.LableEditView>
+
+    <View
+        android:id="@+id/PIN_divider"
+        android:visibility="gone"
+        style="@style/divider"></View>
+
+    <com.feasycom.fsybecon.BeaconView.LableEditView
+        android:id="@+id/Interval"
+        android:visibility="gone"
+        style="@style/Label_Edit"
+        app:labelText="Interval(ms): "></com.feasycom.fsybecon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+
+    <com.feasycom.fsybecon.BeaconView.IntervalSpinnerView
+        android:id="@+id/adv_interval"
+        style="@style/Label_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelText="Interval(ms): "></com.feasycom.fsybecon.BeaconView.IntervalSpinnerView>
+
+    <View
+        android:id="@+id/AdvIntervalDivider"
+        style="@style/divider"></View>
+<!--
+    <com.feasycom.fsybecon.BeaconView.LableSpinnerView
+        android:id="@+id/adv_interval"
+        style="@style/Label_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelText="Interval(ms): "></com.feasycom.fsybecon.BeaconView.LableSpinnerView>
+    <View
+        android:id="@+id/AdvIntervalDivider"
+        style="@style/divider"></View>
+  -->
+
+    <com.feasycom.fsybecon.BeaconView.LableSpinnerView
+        android:id="@+id/TxPower"
+        style="@style/Label_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelText="TxPower: "></com.feasycom.fsybecon.BeaconView.LableSpinnerView>
+
+    <View
+        android:id="@+id/TxPowerDivider"
+        style="@style/divider"></View>
+
+    <com.feasycom.fsybecon.BeaconView.LableButtonView
+        android:id="@+id/Connectable"
+        style="@style/Label_Button"
+        app:labelText="Connectable: "></com.feasycom.fsybecon.BeaconView.LableButtonView>
+
+    <View
+        android:id="@+id/ConnectableDivider"
+        style="@style/divider"></View>
+
+    <com.feasycom.fsybecon.BeaconView.LableEditView
+        android:id="@+id/ExtEnd"
+        style="@style/Label_Edit"
+        app:labelText="Extend: "></com.feasycom.fsybecon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+</LinearLayout>
+
+
